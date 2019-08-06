@@ -1,0 +1,21 @@
+{
+  "name": "react-native-calendar-js",
+  "version": "1.0.4",
+  "description": "Pure js calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo name"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/90Mark/react-native-calendar-js.git"
+  },
+  "keywords": [
+    "calendar",
+    "js",
+    "week",
+    "year"
+  ],
+  "author": "90Mark(mark0012)",
+  "license": "ISC"
+}
