@@ -6,6 +6,8 @@
 支持'点'和'文字'标记
 
 效果：
+
+
 ![Image text](https://github.com/90Mark/react-native-calendar-js/blob/master/readmeRes/1.png)
 
 
