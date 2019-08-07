@@ -1,6 +1,6 @@
 {
   "name": "react-native-calendar-js",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "Pure js calendar",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,8 @@
     "url": "https://github.com/90Mark/react-native-calendar-js.git"
   },
   "keywords": [
+    "react-native-calendar",
+    "react-native",
     "calendar",
     "js",
     "week",
