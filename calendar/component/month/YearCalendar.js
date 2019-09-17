@@ -128,7 +128,7 @@ export default class YearCalendar extends Component {
   _onMomentumScrollEnd = (event) => {
     let x = event.nativeEvent.contentOffset.x
     const { width, endScroll } = this.props
-    let page = parseInt(x / width)
+    let page = parseInt(x / width + 0.5)
     if (page !== this._page) {
       this._page = page
       this._callbackSelectMonth(this._page)
