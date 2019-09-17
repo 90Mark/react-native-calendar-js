@@ -1,6 +1,7 @@
 # react-native-calendar-js
 日历_纯js
 
+github： https://github.com/90Mark/react-native-calendar-js
 
 
 支持'点'和'文字'标记
