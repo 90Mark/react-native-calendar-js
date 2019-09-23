@@ -27,15 +27,14 @@ export default class FooterView extends Component {
     const { width, footerClick, isOpen } = this.props
     return (
       <View
-        style={{ width: width, height: 40, backgroundColor: 'transparent', justifyContent: 'flex-start' }}>
+        style={{ width: width, height: 30, backgroundColor: 'transparent', justifyContent: 'flex-start' }}>
         <ImageBackground
           source={Images.line}
           style={{ width: width, height: 25, justifyContent: 'flex-start', alignItems: 'center' }}>
-
           <TouchableWithoutFeedback
             onPress={footerClick && footerClick}>
             <Image
-              style={{ width: 40, height: 40 }}
+              style={{ width: 40, height: 30 }}
               source={isOpen ? Images.up : Images.down} />
           </TouchableWithoutFeedback>
         </ImageBackground>
