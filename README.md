@@ -70,6 +70,15 @@ selectSomeDay   跳转至某天
 
 
 
+== == == == == == == == == == 
+
+安装方法
+
+```
+npm i  react-native-calendar-js --save
+
+```
+
 使用方法
 
 ```
