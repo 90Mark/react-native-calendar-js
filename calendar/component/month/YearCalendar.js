@@ -4,6 +4,7 @@
  */
 import React, { Component } from 'react'
 import { FlatList, InteractionManager } from 'react-native'
+
 import * as CalendarDateUtils from '../../utils/CalendarDateUtils'
 import MonthItem from './MonthItem'
 import PlaceholderView from '../placeholder/PlaceholderView'

@@ -11,6 +11,7 @@ import {
   Image
 } from 'react-native'
 import Images from '../../res/Images'
+import Colors from '../../res/Colors'
 
 export default class FooterView extends Component {
   constructor () {
@@ -27,7 +28,7 @@ export default class FooterView extends Component {
     const { width, footerClick, isOpen } = this.props
     return (
       <View
-        style={{ width: width, height: 30, backgroundColor: 'transparent', justifyContent: 'flex-start' }}>
+        style={{ width: width, height: 30, backgroundColor: Colors.clearColor, justifyContent: 'flex-start' }}>
         <ImageBackground
           source={Images.line}
           style={{ width: width, height: 25, justifyContent: 'flex-start', alignItems: 'center' }}>

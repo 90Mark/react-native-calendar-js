@@ -10,6 +10,7 @@ import {
 
 import * as CalendarDateUtils from '../../utils/CalendarDateUtils'
 import DayItem from './DayItem'
+import Colors from '../../res/Colors'
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 
@@ -31,7 +32,7 @@ export default class MonthItem extends Component {
         style={{
           width,
           height,
-          backgroundColor: '#fff'
+          backgroundColor: Colors.white
         }}
         bounces={false}
         scrollEnabled={false}

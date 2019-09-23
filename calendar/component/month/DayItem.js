@@ -12,6 +12,7 @@ import {
 } from 'react-native'
 
 import * as CalendarDateUtils from '../../utils/CalendarDateUtils'
+import Colors from '../../res/Colors'
 
 export default class DayItem extends Component {
   constructor () {
@@ -59,30 +60,30 @@ export default class DayItem extends Component {
 
     if (monthState === 0) {
       if (isSelectDay) {
-        textBgStyle = dayStyle.bgSelStyle || { backgroundColor: '#ccebff' }
-        textStyle = dayStyle.textSelStyle || { color: '#0C364B', fontSize: 16 }
-        markTextStyle = dayStyle.markTextStyle || { color: '#85898F', fontSize: 12 }
+        textBgStyle = dayStyle.bgSelStyle || { backgroundColor: Colors.grey_ccebff }
+        textStyle = dayStyle.textSelStyle || { color: Colors.grey_0c364b, fontSize: 16 }
+        markTextStyle = dayStyle.markTextStyle || { color: Colors.grey_85898f, fontSize: 12 }
       }
 
       if (isToday) {
         if (isSelectDay) {
-          textBgStyle = dayStyle.bgTodayStyle || { backgroundColor: '#0198fe' }
-          textStyle = dayStyle.textTodayStyle || { color: '#fff', fontSize: 16, fontWeight: 'bold' }
+          textBgStyle = dayStyle.bgTodayStyle || { backgroundColor: Colors.defaultColor }
+          textStyle = dayStyle.textTodayStyle || { color: Colors.white, fontSize: 16, fontWeight: 'bold' }
         } else {
-          textBgStyle = dayStyle.bgTodayUnSelStyle || { backgroundColor: '#fff' }
-          textStyle = dayStyle.textTodayUnSelStyle || { color: '#0198fe', fontSize: 16, fontWeight: 'bold' }
+          textBgStyle = dayStyle.bgTodayUnSelStyle || { backgroundColor: Colors.white }
+          textStyle = dayStyle.textTodayUnSelStyle || { color: Colors.defaultColor, fontSize: 16, fontWeight: 'bold' }
         }
         dayText = '今'
-        markTextStyle = dayStyle.markTextTodayStyle || { color: '#0198fe', fontSize: 12 }
+        markTextStyle = dayStyle.markTextTodayStyle || { color: Colors.defaultColor, fontSize: 12 }
         markPointStyle = dayStyle.markPointTodayStyle || {
           width: 6,
           height: 6,
-          backgroundColor: '#0198fe',
+          backgroundColor: Colors.defaultColor,
           borderRadius: 3
         }
       }
     } else {
-      textStyle = dayStyle.textAshStyle || { color: '#9FB4C0' }
+      textStyle = dayStyle.textAshStyle || { color: Colors.grey_9fb4c0 }
     }
 
     return (
@@ -101,7 +102,7 @@ export default class DayItem extends Component {
               height: cellWidth,
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#fff',
+              backgroundColor: Colors.white,
               ...bgStyle
             }}>
             <View style={{
@@ -113,7 +114,7 @@ export default class DayItem extends Component {
               ...textBgStyle
             }}>
               <Text
-                style={{ color: '#0C364B', fontSize: 16, ...textStyle }}>{dayText}</Text>
+                style={{ color: Colors.grey_0c364b, fontSize: 16, ...textStyle }}>{dayText}</Text>
             </View>
             {this._renderMarkView(markText, markTextStyle, markBgStyle, markStyle, markPointStyle, isMark)}
           </View>
@@ -171,20 +172,20 @@ export default class DayItem extends Component {
 
 const styles = StyleSheet.create({
   markBgStyle: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
     height: 10,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center'
   },
   markTextStyle: {
-    color: '#85898F',
+    color: Colors.grey_85898f,
     fontSize: 12
   },
   markPointStyle: {
     width: 6,
     height: 6,
-    backgroundColor: '#85898F',
+    backgroundColor: Colors.grey_85898f,
     borderRadius: 3
   }
 })

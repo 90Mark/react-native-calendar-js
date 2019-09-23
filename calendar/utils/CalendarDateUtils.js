@@ -44,7 +44,7 @@ function initDataSource (date, pageCount = 25) {
 
   let currentDate = date || new Date()
   let dataSource = []
-  let screeningDataSource = [{ name: '———  ———' }]
+  let screeningDataSource = [{ name: '——— 请选择 ———' }]
 
   for (let i = 0; i < _page; i++) {
     let difference = i - parseInt(_page / 2)

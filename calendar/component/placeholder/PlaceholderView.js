@@ -5,7 +5,9 @@
 
 import React, { Component } from 'react'
 import { View, Image } from 'react-native'
+
 import Images from '../../res/Images'
+import Colors from '../../res/Colors'
 
 export default class PlaceholderView extends Component {
   render () {
@@ -14,7 +16,7 @@ export default class PlaceholderView extends Component {
       <View style={{
         width: width,
         height: height,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         justifyContent: 'center',
         alignItems: 'center'
       }}>

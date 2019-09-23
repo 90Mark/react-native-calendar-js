@@ -6,6 +6,8 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
+import Colors from '../../res/Colors'
+
 export default class CalendarView extends Component {
   constructor () {
     super()
@@ -59,15 +61,15 @@ const styles = StyleSheet.create({
   bgView: {
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: Colors.white
   },
   bgWeekTitle: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff'
+    backgroundColor: Colors.white
   },
   textWeekTitle: {
     fontSize: 16,
-    color: '#000'
+    color: Colors.black
   }
 })
